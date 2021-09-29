@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600&display=swap");
+.resume-container {
+  color: White;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  animation: fadeInDown;
+  animation-duration: 2s;
+
+  .resume-header {
+    background-color: #e65a4b;
+    width: min(45rem, 90%);
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    margin-top: 3rem;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.445) 0px 10px 36px 0px,
+      rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    & > h1 {
+      margin: 1rem;
+      font-size: 2.5rem;
+    }
+    .circle {
+      width: 6rem;
+      height: 6rem;
+      border-radius: 50%;
+      background-color: #1e1f1c;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      position: relative;
+      &:before {
+        position: absolute;
+        top: -20%;
+        left: 26%;
+        content: "A";
+        font-size: 4rem;
+        font-family: "Dancing Script", cursive;
+        font-size: 600;
+      }
+      &:after {
+        position: absolute;
+        content: "M";
+        font-size: 4rem;
+        top: 40%;
+        left: 20%;
+        font-family: "Dancing Script", cursive;
+      }
+    }
+  }
+  .resume-content {
+    background: #1e1f1c;
+    width: min(45rem, 90%);
+    border-radius: 3px;
+    padding: 1rem;
+    display: flex;
+    margin: 0rem 0 3rem 0;
+    box-shadow: rgba(0, 0, 0, 0.445) 0px 10px 36px 0px,
+      rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    .resume-left,
+    .resume-right {
+      margin: 2rem;
+      line-height: 1.5rem;
+      flex-basis: 50%;
+      & > .title {
+        // background-color: lightgreen;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        color: $color-secondary;
+        font-weight: 600;
+      }
+      & > p {
+        margin: 1rem 0 1rem 0;
+        font-size: 1rem;
+      }
+      #info {
+        // background-color: lightgreen;
+        padding: 1.5rem 0 1.5rem 0;
+        line-height: 1.5rem;
+        color: rgb(218, 218, 218);
+      }
+      .skill {
+        display: flex;
+        & > p {
+          margin: 0.2rem;
+        }
+      }
+    }
+  }
+}

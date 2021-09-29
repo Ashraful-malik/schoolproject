@@ -1,0 +1,88 @@
+.birthday-card-container {
+  //   color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  overflow: hidden;
+  .birthday-card {
+    background-color: #ffebe1;
+    box-shadow: rgba(65, 65, 65, 0.445) 0px 10px 36px 0px,
+      rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    width: min(30rem, 80%);
+    height: 90vh;
+    margin-bottom: 5rem;
+    border-radius: 3px;
+    //padding: 2rem;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+    animation: backInRight;
+    animation-duration: 2s;
+    .party-paper-image {
+      position: absolute;
+      top: 0;
+      right: 0;
+      img {
+        width: 12rem;
+      }
+    }
+    .rambo-image {
+      position: absolute;
+      bottom: 0;
+      img {
+        width: 8rem;
+      }
+    }
+    .balloon {
+      position: absolute;
+      bottom: -15%;
+      right: 0;
+      //   z-index: 3;
+
+      img {
+        width: 8rem;
+      }
+    }
+    .title {
+      font-size: 3rem;
+      stext-transform: uppercase;
+      margin: 2rem 0rem 0rem 2rem;
+      font-family: "Bebas Neue", cursive;
+      line-height: 6.5rem;
+      letter-spacing: 0.5rem;
+
+      #blue {
+        color: #38c6d9;
+      }
+      #orange {
+        color: #ff5f5f;
+      }
+    }
+    .sub-title {
+      text-transform: uppercase;
+      margin: 0rem 2rem;
+      letter-spacing: 1px;
+      font-family: $font-roboto;
+      color: #1f2d49;
+      font-size: 1.5rem;
+    }
+    .name {
+      text-align: center;
+      font-size: 2rem;
+      font-family: "Pacifico", cursive;
+      color: #ff5f5f;
+    }
+    .address {
+      font-family: "Caveat", cursive;
+      line-height: 2rem;
+      float: right;
+      font-size: 1.5rem;
+      width: 60%;
+      margin: 1.2rem 5rem 0 0;
+    }
+  }
+}

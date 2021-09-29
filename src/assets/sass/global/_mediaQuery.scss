@@ -1,0 +1,23 @@
+// variables for media query
+$mobile-width: 420px;
+$table-width: 768px;
+$desktop-width: 1080px;
+
+// media query
+@mixin mobile {
+  @media screen and (max-width: $mobile-width) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: $desktop-width) {
+    @content;
+  }
+}
+
+@mixin table {
+  @media screen and (max-width: $table-width) {
+    @content;
+  }
+}

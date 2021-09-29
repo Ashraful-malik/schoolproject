@@ -1,0 +1,21 @@
+// importing colors
+@import "./global/colors";
+@import "./global/mediaQuery";
+
+// Bulma styling
+// @import "~bulma/bulma";
+
+// fonts
+@import "./global/font";
+
+// importing  components
+@import "./components/home";
+@import "./components/_home2";
+@import "./components/project";
+@import "./components/detail";
+@import "./components/biodata";
+@import "./components/birthdaycard";
+@import "./components/form";
+@import "./components/idcard";
+@import "./components/questionpaper";
+@import "./components/resume";

@@ -1,0 +1,221 @@
+.home {
+  background: url("~@/assets/images/background.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -10rem;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  //   margin-bottom: 2rem;
+
+  //   overflow: hidden;
+  .images {
+    .laptop-img {
+      position: absolute;
+      top: 10%;
+      margin: 1rem;
+      width: 8rem;
+      animation: backInDown;
+      animation-duration: 1s;
+    }
+    .vector2 {
+      display: none;
+    }
+    .dots-img {
+      position: absolute;
+      bottom: -3%;
+      width: 3rem;
+      margin: 0.3rem;
+    }
+
+    .mobile,
+    .headphone,
+    .laptopimage {
+      width: 3rem;
+      position: absolute;
+    }
+    .mobile {
+      right: 0;
+      top: 15%;
+      right: 5%;
+      animation: floating 6s ease-in-out infinite;
+      -webkit-animation: floating 6s ease-in-out infinite;
+    }
+    .headphone {
+      top: 55%;
+      margin: 1rem;
+      animation: floating 4s ease-in-out infinite;
+      -webkit-animation: floating 4s ease-in-out infinite;
+    }
+    .laptopimage {
+      right: 0;
+      margin: 1rem;
+      top: 50%;
+      animation: floating 7s ease-in-out infinite;
+      -webkit-animation: floating 7s ease-in-out infinite;
+    }
+
+    @keyframes floating {
+      0% {
+        transform: translatey(0px);
+      }
+      50% {
+        transform: translatey(-20px);
+      }
+      100% {
+        transform: translatey(0px);
+      }
+    }
+  }
+  .content {
+    margin-top: -5rem;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    font-family: $font-oldStandard;
+    color: $color-white;
+    h1 {
+      font-weight: 900;
+      font-size: 3.9rem;
+      animation: fadeInLeft;
+      animation-duration: 0.8s;
+    }
+    // button styling
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1rem;
+      width: 100%;
+      #view-project-btn {
+        background: none;
+        border: none;
+        font-size: 1.2rem;
+        padding: 0.7rem 4.5rem;
+        cursor: pointer;
+        border: 2px solid $color-secondary;
+        color: white;
+        border-radius: 2rem;
+        box-sizing: border-box;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+          rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        position: relative;
+        overflow: hidden;
+
+        // hover effect
+        span {
+          background: $color-secondary;
+          position: absolute;
+          z-index: -1;
+        }
+        .to-right {
+          width: 0;
+          height: 100%;
+          transition: 0.8s ease-in-out;
+          top: 0;
+          left: 0;
+          border-radius: 2rem;
+          -webkit-border-radius: 2rem;
+          -moz-border-radius: 2rem;
+          -ms-border-radius: 2rem;
+          -o-border-radius: 2rem;
+        }
+        &:hover .to-right {
+          width: 100%;
+          transition: 0.8s;
+        }
+      }
+    }
+  }
+  .about {
+    // background: red;
+    color: $color-primary-dark;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    left: 16%;
+    bottom: -2%;
+
+    h2 {
+      margin-bottom: 0.7rem;
+      color: $color-secondary;
+      position: relative;
+
+      &:before {
+        content: "";
+        position: absolute;
+        width: 50%;
+        height: 5px;
+        top: -30%;
+        background: $color-secondary;
+      }
+    }
+    span {
+      //   margin-top: 0.5rem;
+      font-size: 1.2rem;
+      font-family: $font-rancho;
+      letter-spacing: 0.1em;
+    }
+  }
+}
+
+// desktop styling
+@include desktop {
+  .home {
+    .images {
+      .laptop-img {
+        animation: floating 3s ease-in-out infinite;
+        left: 10%;
+        -webkit-animation: floating 3s ease-in-out infinite;
+      }
+      .vector2 {
+        display: block;
+        position: absolute;
+        right: 0;
+        width: 18rem;
+        bottom: -25%;
+      }
+
+      .mobile,
+      .headphone,
+      .laptopimage {
+        width: 5rem;
+        position: absolute;
+      }
+      .laptopimage {
+        right: 20%;
+      }
+      .headphone {
+        left: 10%;
+      }
+      .mobile {
+        right: 12%;
+      }
+      .dots-img {
+        width: 6rem;
+        top: 100%;
+      }
+    }
+    .content {
+      h1 {
+        font-size: 6rem;
+        font-family: $font-oldStandard;
+      }
+    }
+    .about {
+      font-size: 2rem;
+      bottom: -12%;
+      animation: zoomInUp;
+      animation-duration: 2s;
+    }
+  }
+}
