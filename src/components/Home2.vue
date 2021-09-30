@@ -70,6 +70,15 @@
                   <span class="typing"></span>
                 </vue-typed-js>
               </label>
+              <label>
+                <vue-typed-js
+                  :strings="['Subject Teacher:Kundan Dubey']"
+                  :showCursor="false"
+                  :startDelay="8000"
+                >
+                  <span class="typing"></span>
+                </vue-typed-js>
+              </label>
             </div>
           </div>
         </div>

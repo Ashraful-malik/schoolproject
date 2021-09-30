@@ -25,7 +25,7 @@
         </div>
         <div class="address">
           <p id="date">
-            Saterday ,November 2nd from 8pm to -10pm.
+            saturday ,November 2nd from 8pm to -10pm.
           </p>
           <p id="party-adress">
             Disy Cafe 1234 Foxtall Road DieGo
@@ -38,7 +38,7 @@
     </div>
   </div>
 </template>
-
+                                                      
 <script>
 export default {
   name: "birthdaycard",
