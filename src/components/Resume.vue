@@ -36,19 +36,9 @@
             <p>Typography and Lettering</p>
             <p>Backend Development</p>
           </div>
-
           <span class="title">Skill</span>
-
-          <div id="info ">
-            <div class="skill">
-              <p>Html,</p>
-              <p>Css,</p>
-              <p>Scss,</p>
-              <p>Javascript,</p>
-              <p>VueJs,</p>
-              <br />
-              <p id="">ExpressJs</p>
-            </div>
+          <div id="info">
+            <p>Html, Css, Scss ,Javascript, VueJs, ExpressJs</p>
           </div>
         </div>
 

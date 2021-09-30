@@ -50,3 +50,13 @@
     }
   }
 }
+@include mobile {
+  .container {
+    .row {
+      width: 100%;
+      .col {
+        margin: 0 2rem 1rem 0;
+      }
+    }
+  }
+}

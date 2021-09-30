@@ -41,8 +41,6 @@
       position: absolute;
       bottom: -15%;
       right: 0;
-      //   z-index: 3;
-
       img {
         width: 8rem;
       }
@@ -83,6 +81,16 @@
       font-size: 1.5rem;
       width: 60%;
       margin: 1.2rem 5rem 0 0;
+    }
+  }
+}
+@include mobile {
+  .birthday-card {
+    .title {
+      h1 {
+        font-size: 4rem;
+        line-height: 5rem;
+      }
     }
   }
 }

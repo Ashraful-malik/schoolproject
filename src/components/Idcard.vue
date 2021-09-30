@@ -7,7 +7,7 @@
             <div class="image-wrapper">
               <img src="@/assets/images/boy.svg" alt="image" />
             </div>
-            <p>hello</p>
+            <p>Graphic Desiner</p>
           </div>
           <div class="id-card-details">
             <div class="name">

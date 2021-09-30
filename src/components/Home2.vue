@@ -1,10 +1,5 @@
 <template>
   <div class="background">
-    <!-- <audio autoplay>
-      <source src="Clair de Lune.mp3" />
-      <source src="@/assets/mixkit-short.wav" />
-    </audio> -->
-
     <video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
       <source src="@/assets/video.mp4" type="video/mp4" />
     </video>

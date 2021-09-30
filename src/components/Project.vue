@@ -3,9 +3,9 @@
     <div class="wrapper">
       <div class="container">
         <vue-typed-js
-          :strings="['', 'Projects$']"
+          :strings="['Projects$']"
           :loop="true"
-          :typeSpeed="150"
+          :typeSpeed="120"
           :backSpeed="50"
           :cursorChar="'_'"
         >

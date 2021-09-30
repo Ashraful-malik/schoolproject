@@ -22,3 +22,16 @@
     }
   }
 }
+@include mobile {
+  .details {
+    .detail-navbar {
+      width: 100%;
+      display: flex;
+      // background-color: lightsalmon;
+      .home-btn,
+      .project-btn {
+        // background-color: lightsalmon;
+      }
+    }
+  }
+}
